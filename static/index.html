@@ -1,42 +1,33 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>Ultimate Supercar Gallery 2026</title>
-  <style>
-    body { background-color: #050505; color: #ffffff; font-family: 'Arial', sans-serif; margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; overflow: hidden; text-align: center; }
-    h1 { font-size: 2.5rem; color: #ff3c00; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 10px; }
-    .car-img { width: 85%; max-width: 700px; border: 3px solid #333; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 0 20px rgba(255, 60, 0, 0.3); }
-    .click-trigger { background: linear-gradient(145deg, #ff3c00, #b32a00); color: white; font-size: 1.4rem; font-weight: bold; padding: 20px 50px; border-radius: 50px; border: none; cursor: pointer; text-transform: uppercase; box-shadow: 0 5px 15px rgba(255, 60, 0, 0.4); transition: transform 0.1s; user-select: none; }
-    .click-trigger:active { transform: scale(0.95); }
-  </style>
+    <style>
+        /* Jouw styling van regel 9 */
+        .car-img {
+            width: 85%;
+            border: 2px solid grey;
+            border-radius: 15px;
+        }
+        
+        body {
+            background-color: black;
+            color: orangered;
+            font-family: sans-serif;
+        }
+    </style>
 </head>
 <body>
 
-  <h1>Supercar Gallery</h1>
-  
- 
-<img src="lamborghini.jpg" alt="Lamborghini Aventador Ultimae" class="car-img">
-
-
-  <button id="trigger" class="click-trigger">
-    Klik voor de volgende wagen...
-  </button>
-
-  <script>
-    const btn = document.getElementById('trigger');
-    btn.addEventListener('click', function() {
-      // Dit start de chaos DIRECT bij 1 klik
-      if (typeof window.start === 'function') {
-        window.start();
-      } else {
-        // Forceert de irritante scripts als de startfunctie nog niet geladen is
-        document.dispatchEvent(new KeyboardEvent('keydown', {'key': ' '}));
-      }
-    });
-  </script>
-
-  <script src="index.js"></script>
+<center>
+    <h1>SUPERCAR GALLERY</h1>
+    
+    <!-- Regel 19: Hier wordt de afbeelding geladen -->
+    <img src="slides.png" alt="Lamborghini Aventador" class="car-img">
+    
+    <br><br>
+    
+    <button class="button-24">KLIK VOOR DE VOLGENDE WAGEN...</button>
+</center>
 
 </body>
 </html>

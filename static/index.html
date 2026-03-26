@@ -1,18 +1,71 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="utf-8">
-<title>Supercar Gallery</title>
-<style>
-body { background: #000; color: #fff; text-align: center; font-family: sans-serif; }
-h1 { color: #ff3c00; }
-.key { border: 1px solid #ff3c00; padding: 2px 10px; }
-</style>
+  <meta charset="utf-8">
+  <title>Ultimate Supercar Gallery 2026</title>
+  <style>
+    body {
+      background-color: #050505;
+      color: #ffffff;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #ff3c00;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+    .car-img {
+      width: 85%;
+      max-width: 700px;
+      border: 3px solid #333;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(255, 60, 0, 0.3);
+    }
+    /* De nieuwe "Klik" knop */
+    .click-trigger {
+      background: linear-gradient(145deg, #ff3c00, #b32a00);
+      color: white;
+      font-size: 1.4rem;
+      font-weight: bold;
+      padding: 20px 50px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      box-shadow: 0 5px 15px rgba(255, 60, 0, 0.4);
+      transition: transform 0.1s;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    .click-trigger:active {
+      transform: scale(0.95);
+      background: #ff3c00;
+    }
+  </style>
 </head>
 <body>
-<h1>Supercar Gallery</h1>
-<img src="https://images.unsplash.com" style="width:80%; max-width:600px; border:5px solid #333; border-radius:10px; margin:20px 0;">
-<p>Houd <span class="key">SPATIE</span> 3 seconden ingedrukt voor de volgende wagen...</p>
-<script src="index.js"></script>
+
+  <h1>Supercar Gallery</h1>
+  
+  <img src="https://images.lifestyleasia.com" class="car-img" alt="Lamborghini V12 Vision">
+
+  <!-- De knop waar ze op moeten klikken en vasthouden -->
+  <button id="trigger" class="click-trigger">
+    Houd 3 sec. vast voor volgende wagen...
+  </button>
+
+  <script src="index.js"></script>
+
 </body>
 </html>
